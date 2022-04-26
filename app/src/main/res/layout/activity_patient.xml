@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <ImageView
+        android:id="@+id/logo"
+        android:src="@drawable/logo_meded"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:contentDescription="@string/description"/>
+
+
+    <TextView
+        android:id="@+id/title"
+        android:text="Регистрация на прием"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textColor="@color/black"/>
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/registrationname"
+        android:hint="Введите ваше ФИО"
+        android:drawableStart="@drawable/ic_profile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawablePadding="10dp"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textColorHint="@color/black">
+
+    </com.google.android.material.textfield.TextInputEditText>
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/regIIN"
+        android:hint="Введите ваш ИИН"
+        android:drawableStart="@drawable/ic_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:drawablePadding="10dp"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textColorHint="@color/black">
+
+    </com.google.android.material.textfield.TextInputEditText>
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/regPhone"
+        android:hint="@string/phone"
+        android:drawableStart="@drawable/ic_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:drawablePadding="10dp"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textColorHint="@color/black">
+
+    </com.google.android.material.textfield.TextInputEditText>
+    <Spinner
+        android:id="@+id/availabilityspin"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:popupBackground="#fff"
+        android:entries="@array/timeframes1"
+        android:layout_marginStart="9dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <Spinner
+        android:id="@+id/specializationspin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="9dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:entries="@array/Specialization"
+        android:gravity="center"
+        android:popupBackground="#fff" />
+    <Button
+        android:id="@+id/Request1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Оставить заявку"
+        android:textAllCaps="false"
+        android:layout_margin="10dp"
+        android:textSize="20sp"
+        android:layout_gravity="center"
+        android:textColor="#fff"
+        android:background="@drawable/button_background"/>
+
+    <TextView
+        android:id="@+id/text6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:text="При себе иметь удостоверение личности, либо паспорт."
+        android:textColor="#fff"
+        android:textSize="15sp"></TextView>
+
+
+</LinearLayout>
