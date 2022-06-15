@@ -10,6 +10,7 @@ import android.widget.TextView;
 public class LoginActivity extends AppCompatActivity {
     private TextView loginPageQuestion;
     private TextView loginButton;
+    private TextView Quiz;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,6 +29,14 @@ public class LoginActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(LoginActivity.this, PatientActivity.class);
+                startActivity(intent);
+            }
+        });
+        Quiz = findViewById(R.id.Quiz);
+        Quiz.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(LoginActivity.this, Quiz.class);
                 startActivity(intent);
             }
         });
